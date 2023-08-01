@@ -1,0 +1,33 @@
+[project]
+name = "kafka-adapter"
+version = "0.1.0"
+authors = ["Кошелев Дмитрий <me@koshelev.net>"]
+description = "Кафка-адаптер для обработки событий"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.poetry]
+name = "kafka-adapter"
+version = "0.1.0"
+description = "Кафка-адаптер для обработки событий"
+authors = ["Кошелев Дмитрий <me@koshelev.net>"]
+packages = [{ include = "kafka_adapter" }]
+
+[tool.poetry.dependencies]
+python = "~3.10"
+aiokafka = "^0.8.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "7.2.0"
+pytest-asyncio = "0.20.3"
+mypy = "^1.4.1"
+
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
